@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div = class="container">
+        <h1>FORMULÁRIO</h1><br>
+        <h2>Campos Numéricos</h2>
+        <form id="form-camposnumericos">
+            <h3>CAMPO A</h3>
+            <input type="number" id="numero-campo-a" required placeholder="digite seu número aqui" />
+            </p><br>
+            <h4>CAMPO B</h4>
+            <input type="number" id="numero-campo-b" required placeholder="digite seu número aqui" />
+            <p class="error-message">
+                Ops, o número do </b>CAMPO B</b> precisa ser maior do que o número do <b>CAMPO A</b>!
+            </p>
+            <button id="btn-finalizar" type="submit">FINALIZAR</button>
+        </form>
+        <p class="success-message"></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
