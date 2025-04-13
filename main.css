@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #E7E7E7;
+    padding-top: 200px; /* Espaço do topo */
+    display: flex; /* Alinha tudo ao centro na horizontal */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente o conteúdo da container */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo do header */
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center; /* Garante centralização do texto */
+}
+
+form {
+    display: flex;
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+form input {
+    font-size: 20px;
+    background-color: #fff;
+    border: none;
+    padding: 8px;
+    padding-left: 10px;
+    flex: 1; /* Ocupa o espaço disponível */
+    margin-right: 8px; /* Espaço de 8px entre input e botão */
+}
+
+form button {
+   background-color: #17eb17;
+   color: #000000;
+   font-size: 24px;
+   font-weight: bold;
+   border: none;
+   cursor: pointer;
+   padding: 10px 20px; /* Largura do botão baseada no conteúdo */
+   white-space: nowrap; /* Impede quebra de linha do texto */
+}
+
+ul#lista-de-tarefas {
+    list-style: disc;
+    padding-left: 20px;
+    width: 100%;
+    max-width: 640px;
+}
+
+ul#lista-de-tarefas li {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+ul#lista-de-tarefas li span {
+    cursor: pointer; /* Mãozinha apenas no texto */
+    transition: 0.2s;
+}
+
+/* Estilo de tarefa riscada */
+ul#lista-de-tarefas li.feita {
+    text-decoration: line-through;
+    color: #999;
+}
